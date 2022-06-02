@@ -1,0 +1,18 @@
+.code-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: red;
+}
+
+.draw-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
