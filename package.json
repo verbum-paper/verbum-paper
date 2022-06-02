@@ -1,0 +1,15 @@
+{
+  "name": "verbum-paper",
+  "version": "1.0.0",
+  "description": "Editor for creating articles and sharing formulas and mathematical material.",
+  "main": "verbum-paper.js",
+  "scripts": {
+    "start": "electron verbum-paper.js"
+  },
+  "license": "All credits go to Jesus Christ!",
+  "devDependencies": {
+    "electron": "^18.0.0"
+  }
+}
+
+
