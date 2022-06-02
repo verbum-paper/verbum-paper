@@ -29,29 +29,35 @@
 
     <link rel="stylesheet"href="./css/normalize.css">
     <link rel="stylesheet"href="./css/style.css">
-
-    <script src="./js/verbum-paper.js" ></script>
-
+    
 </head>
 <body>
 
+    <!-- Toolbar area -->
     <div class="toolbar-area">
 
     </div>
 
+    <!-- Code area -->
     <div class="code-area" >
 
-        Jesus é Bom!
+        <pre id="code-editor">function foo(items) {
+    var i;
+    for (i = 0; i &lt; items.length; i++) {
+        alert("Ace Rocks " + items[i]);
+    }
+}</pre>
 
     </div>
 
-    <div class="separator-area">
+    <div class="separator-area"></div>
 
-    </div>
-
+    <!-- Draw area -->
     <div class="draw-area">
 
     </div>
+
+    <script src="./js/verbum-paper.js" ></script>
 
 </body>
 </html>

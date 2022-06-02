@@ -43,4 +43,19 @@ $(document).ready(() => {
 
 })
 
+/*
+** Editor control area.
+*/
+
+var codeEditor = null
+
+$(document).ready(() => {
+
+    codeEditor = ace.edit("code-editor")
+    codeEditor.setTheme("ace/theme/twilight")
+    codeEditor.session.setMode("ace/mode/javascript")
+    codeEditor.setAutoScrollEditorIntoView(true)
+
+})
+
 
