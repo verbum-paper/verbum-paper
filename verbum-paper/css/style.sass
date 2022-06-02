@@ -3,20 +3,38 @@
 // Styles.
 //
 
-.code-area
+.toolbar-area
     position: absolute
     top: 0
     left: 0
+    width: 100%
+    height: 30px
+    background-color: green
+
+.code-area
+    position: absolute
+    top: 30px
+    left: 0
     width: 40%
-    height: 100%
+    height: calc( 100% - 30px )
     background-color: red
+
+.separator-area
+    position: absolute
+    top: 30px
+    left: 40%
+    width: 5px
+    height: calc( 100% - 30px )
+    cursor: col-resize
+    background-color: yellow
 
 .draw-area
     position: absolute
-    top: 0
+    top: 30px
     right: 0
-    width: 60%
-    height: 100%
+    width: calc( 60% - 5px )
+    height: calc( 100% - 30px )
     background-color: blue
+
 
 
