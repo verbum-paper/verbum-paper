@@ -1,84 +1,46 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Verbum Paper</title>
+<div class="title1" >
+    Função polinomial do 2° grau
+</div>
 
-    <script src="./libs/polyfill-v8.2.1/polyfill.min.js" ></script>
+<div class="text1" >
+    Definição: uma função <b>f: ℝ → ℝ</b> chama-se <i>quadrática</i> quando existem números reais <b>a</b>, <b>b</b>, <b>c</b>, com <b>a</b> ≠ 0, tal que <b>f(x) = ax² + bx + c</b> para todo <b>x</b> ∈ ℝ.
+</div>
 
-    <script src="./libs/mathjax-v3.2.1/tex-mml-chtml.js" ></script>
+<center>
+    <div class="text1 text-center no-padding" >
+        Gráfico de uma função quadrática
+    </div>
 
-    <script src="./libs/mathlive-v0.73.7/mathlive.min.js"></script>
-    
-    <script src="./libs/d3-v7.4.4/d3.min.js"></script>
+    <div id="function"></div>
 
-    <script src="./libs/chart.js-v3.8.0/chart.min.js" ></script>
+    <script>
+        functionPlot({
+            target: "#function",
+            width: 400,
+            height: 200,
+            yAxis: { domain: [-1, 9] },
+            grid: true,
+            data: [ {
+                fn: "x^2"
+            }]
+        });
+    </script>
+</center>
 
-    <script src="./libs/ace-v1.5.3/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<div class="text1" >
+    Chama-se <i>zero ou raiz da função</i> do 2° grau <i>f(x) = ax² + bx + c</i> o número real <i>x</i> tal que <i>f(x) = 0</i>. Os zeros da função quadrática são dados pela chamada <b>fórmula de Bhaskara</b>:
+</div>
 
-    <script src="./libs/function-plot-v1.22.8/function-plot.js" ></script>
+<p class="text2">
+\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+</p>
 
-    <script src="./libs/html2canvas-v1.4.1/html2canvas.min.js" ></script>
+<div class="text1" >
+    O gráfico da função acima pode ser desenhado utilizando o código abaixo.
+</div>
 
-    <script src="./libs/jquery-v3.6.0/jquery-3.6.0.min.js" ></script>
-
-    <link rel="stylesheet"href="./libs/highlightjs-v11.5.1/styles/atom-one-dark.min.css">
-    <script src="./libs/highlightjs-v11.5.1/highlight.min.js" ></script>
-
-    <link rel="stylesheet"href="./css/normalize.css">
-    <link rel="stylesheet"href="./css/style.css">
-    <link rel="stylesheet"href="./css/style-view.css">
-    
-</head>
-<body>
-    
-    <div class="view-content" >
-        <div class="view-content-inner" >
-            
-            <div class="title1" >
-                Função polinomial do 2° grau
-            </div>
-
-            <div class="text1" >
-                Definição: uma função <b>f: ℝ → ℝ</b> chama-se <i>quadrática</i> quando existem números reais <b>a</b>, <b>b</b>, <b>c</b>, com <b>a</b> ≠ 0, tal que <b>f(x) = ax² + bx + c</b> para todo <b>x</b> ∈ ℝ.
-            </div>
-
-            <center>
-                <div class="text1 text-center no-padding" >
-                    Gráfico de uma função quadrática
-                </div>
-
-                <div id="function"></div>
-
-                <script>
-                    functionPlot({
-                        target: "#function",
-                        width: 400,
-                        height: 200,
-                        yAxis: { domain: [-1, 9] },
-                        grid: true,
-                        data: [ {
-                            fn: "x^2"
-                        }]
-                    });
-                </script>
-            </center>
-	        
-            <div class="text1" >
-                Chama-se <i>zero ou raiz da função</i> do 2° grau <i>f(x) = ax² + bx + c</i> o número real <i>x</i> tal que <i>f(x) = 0</i>. Os zeros da função quadrática são dados pela chamada <b>fórmula de Bhaskara</b>:
-            </div>
-
-            <p class="text2">
-            \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-            </p>
-
-            <div class="text1" >
-                O gráfico da função acima pode ser desenhado utilizando o código abaixo.
-            </div>
-
-            <pre><code class="language-javascript">functionPlot({
+<pre><code class="language-javascript">functionPlot({
     target: "#function",
     width: 400,
     height: 200,
@@ -88,27 +50,5 @@
         fn: "x^2"
     }]
 });</code></pre>
-
-        </div>
-    </div>
-
-    <!-- Default scripts -->
-
-    <script>
-        window.addEventListener('DOMContentLoaded', 
-          () => MathLive.renderMathInDocument()
-        );
-    </script>
-  
-    <script>
-          document.addEventListener('DOMContentLoaded', (event) => {
-              document.querySelectorAll('pre code').forEach((el) => {
-                  hljs.highlightElement(el);
-              });
-          });
-    </script>
-
-</body>
-</html>
 
 

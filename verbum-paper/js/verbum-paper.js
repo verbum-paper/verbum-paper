@@ -7,7 +7,7 @@
 
 $(document).ready(() => {
 
-    console.log('Verbum Paper -> Started!')
+    console.log('Verbum Paper -> Started - Jesus <3')
 
 })
 
@@ -58,7 +58,7 @@ $(document).ready(() => {
     codeEditor.setOptions({
         fontSize: "11pt"
     });
-    
+
 })
 
 /*
@@ -67,7 +67,18 @@ $(document).ready(() => {
 
 $(document).ready(() => {
 
+    $('.btn-copy-clip').on('click', ()=>{
+        var body = $('.draw-area-iframe').contents().find('body')[0];
 
+        html2canvas(body, {
+            onrendered: function( canvas ) {
+                $("#content").empty().append(canvas);
+            }
+        }).then(canvas => {
+            window.api.process_canvas(canvas);
+            console.log('Copy ok!')
+        });
+    })
     
 })
 
@@ -77,51 +88,48 @@ $(document).ready(() => {
 
 $(document).ready(() => {
 
-    codeEditor.setValue(`<div class="view-content" >
-    <div class="view-content-inner" >
-        
-        <div class="title1" >
-            Função polinomial do 2° grau
-        </div>
+    codeEditor.setValue(`<div class="title1" >
+    Função polinomial do 2° grau
+</div>
 
-        <div class="text1" >
-            Definição: uma função <b>f: ℝ → ℝ</b> chama-se <i>quadrática</i> quando existem números reais <b>a</b>, <b>b</b>, <b>c</b>, com <b>a</b> ≠ 0, tal que <b>f(x) = ax² + bx + c</b> para todo <b>x</b> ∈ ℝ.
-        </div>
+<div class="text1" >
+    Definição: uma função <b>f: ℝ → ℝ</b> chama-se <i>quadrática</i> quando existem números reais <b>a</b>, <b>b</b>, <b>c</b>, com <b>a</b> ≠ 0, tal que <b>f(x) = ax² + bx + c</b> para todo <b>x</b> ∈ ℝ.
+</div>
 
-        <center>
-            <div class="text1 text-center no-padding" >
-                Gráfico de uma função quadrática
-            </div>
+<center>
+    <div class="text1 text-center no-padding" >
+        Gráfico de uma função quadrática
+    </div>
 
-            <div id="function"></div>
+    <div id="function"></div>
 
-            <script>
-                functionPlot({
-                    target: "#function",
-                    width: 400,
-                    height: 200,
-                    yAxis: { domain: [-1, 9] },
-                    grid: true,
-                    data: [ {
-                        fn: "x^2"
-                    }]
-                });
-            </script>
-        </center>
-        
-        <div class="text1" >
-            Chama-se <i>zero ou raiz da função</i> do 2° grau <i>f(x) = ax² + bx + c</i> o número real <i>x</i> tal que <i>f(x) = 0</i>. Os zeros da função quadrática são dados pela chamada <b>fórmula de Bhaskara</b>:
-        </div>
+    <script>
+        functionPlot({
+            target: "#function",
+            width: 400,
+            height: 200,
+            yAxis: { domain: [-1, 9] },
+            grid: true,
+            data: [ {
+                fn: "x^2"
+            }]
+        });
+    </script>
+</center>
 
-        <p class="text2">
-        \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-        </p>
+<div class="text1" >
+    Chama-se <i>zero ou raiz da função</i> do 2° grau <i>f(x) = ax² + bx + c</i> o número real <i>x</i> tal que <i>f(x) = 0</i>. Os zeros da função quadrática são dados pela chamada <b>fórmula de Bhaskara</b>:
+</div>
 
-        <div class="text1" >
-            O gráfico da função acima pode ser desenhado utilizando o código abaixo.
-        </div>
+<p class="text2">
+\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+</p>
 
-        <pre><code class="language-javascript">functionPlot({
+<div class="text1" >
+    O gráfico da função acima pode ser desenhado utilizando o código abaixo.
+</div>
+
+<pre><code class="language-javascript">functionPlot({
     target: "#function",
     width: 400,
     height: 200,
@@ -130,10 +138,7 @@ $(document).ready(() => {
     data: [ {
         fn: "x^2"
     }]
-});</code></pre>
-
-        </div>
-    </div>`, -1)
+});</code></pre>`, -1)
 })
 
 
