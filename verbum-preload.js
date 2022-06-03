@@ -6,6 +6,7 @@ var fs = require('fs');
 contextBridge.exposeInMainWorld(
     "api", {
         
+      // Printer.
       internal_print: () => {
         console.log("Jesus <3 started")
         ipcRenderer.on('internal-print-reply', (event, arg) => {
@@ -107,8 +108,8 @@ contextBridge.exposeInMainWorld(
           ipcRenderer.send('save-html-file', 'Jesus <3')
       },
 
-      // Save spec file.
-      writeFileSpec: (code, path, callback) => {
+      // Save spec file (HTML).
+      writeFileSpecHtml: (code, path, callback) => {
           fs.writeFile(path, code, (err) => {
             if (err) {
                 alert("An error ocurred write file" + err.message)
@@ -117,9 +118,51 @@ contextBridge.exposeInMainWorld(
         
             callback('File writed.')
         })
-      }
+      },
+
+      // Export PNG.
+      exportPng: (callback) => {
+          ipcRenderer.on('save-png-file-reply', (event, filePath) => {
+                
+              // Prepare ext.
+              var finalPath = filePath
+              if (filePath.substring(filePath.length - 4, filePath.length) != '.png') {
+                  finalPath = filePath + '.png'
+              }
+              
+              callback(finalPath)
+          })
+
+          ipcRenderer.send('save-png-file', 'Jesus <3')
+      },
+
+      // Save spec file (PNG).
+      writeFileSpecPng: (canvas, path, callback) => {
+          saveCallbackPng(canvas, path, callback)
+      },
+
         
     }
 );
+
+// Export PNG.
+async function saveCallbackPng (canvas, path, callback) {
+  const blob = await new Promise(
+     (resolve) => canvas.toBlob(blob => resolve(blob), "image/png", 0.8)
+  );
+
+  const buffer = new Buffer(await blob.arrayBuffer());
+  
+  await new Promise(
+      (resolve, reject) => fs.writeFile(path, buffer, "binary", (err) => {
+          if (err === null) {
+              resolve();
+              callback('Saved')
+          } else {
+              reject(err);
+          }
+      })
+   );
+}
 
 

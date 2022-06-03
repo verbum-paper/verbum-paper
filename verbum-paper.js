@@ -47,7 +47,9 @@ app.once('ready', () => {
   })
 })
 
-// Imprime pela impressora/PDF.
+/*
+** Printer.
+*/
 ipcMain.on('internal-print', (event, arg) => {
   console.log("Jesus <3")
 
@@ -117,6 +119,32 @@ ipcMain.on('save-html-file', (event, arg) => {
         }
         
         event.reply('save-html-file-reply', filename)
+    }).catch(err => {
+        alert(err)
+    })
+})
+
+/*
+** Save PNG.
+*/
+
+ipcMain.on('save-png-file', (event, arg) => {
+    dialog.showSaveDialog(null, {
+        title: "Export/save PNG file",
+        buttonLabel : "Save file",
+        filters :[
+            {name: 'PNG File', extensions: ['png']},
+            {name: 'All Files', extensions: ['*']}
+        ]
+    }).then(result => {
+        filename = result.filePath;
+      
+        if (filename === undefined) {
+            alert('The user clicked the btn but didn\'t created a file');
+            return;
+        }
+        
+        event.reply('save-png-file-reply', filename)
     }).catch(err => {
         alert(err)
     })

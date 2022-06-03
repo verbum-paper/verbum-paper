@@ -63,6 +63,8 @@ $(document).ready(() => {
 ** Actions buttons.
 */
 
+var currentCanvas = null
+
 $(document).ready(() => {
 
     // Open file (HTML).
@@ -80,10 +82,29 @@ $(document).ready(() => {
     // Export HTML.
     $('.btn-export-html').on('click', ()=>{
         window.api.saveHtmlFile((data1)=>{
-            window.api.writeFileSpec(codeEditor.getValue(), data1, (data2)=>{
+            window.api.writeFileSpecHtml(codeEditor.getValue(), data1, (data2)=>{
                 console.log(data2)
             })
         })
+    })
+
+    // Export PNG.
+    $('.btn-export-png').on('click', ()=>{
+        var body = $('.draw-area-iframe').contents().find('body')[0]
+
+        html2canvas(body, {
+            onrendered: function( canvas ) {
+                $("#content").empty().append(canvas)
+            }
+        }).then(canvas => {        
+            currentCanvas = canvas
+
+            window.api.exportPng((data1)=>{
+                window.api.writeFileSpecPng(currentCanvas, data1, (data2)=>{
+                    console.log(data2)
+                })
+            })
+        });
     })
 
     // Copy to clipboard (image).
@@ -96,7 +117,6 @@ $(document).ready(() => {
             }
         }).then(canvas => {
             window.api.process_canvas(canvas)
-            console.log('Copy ok!')
         });
     })
 
