@@ -30,7 +30,7 @@ app.once('ready', () => {
   
   win.setMenuBarVisibility(false)
   win.center()
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
   win.webContents.setUserAgent(globalUserAgent);
   //win.loadURL('http://...');
 
@@ -45,6 +45,13 @@ app.once('ready', () => {
   win.once('ready-to-show', () => {
     win.show()
   })
+})
+
+/*
+** Dev Tools.
+*/
+ipcMain.on('toggle-dev-tools', (event, arg) => {
+    win.webContents.openDevTools()
 })
 
 /*

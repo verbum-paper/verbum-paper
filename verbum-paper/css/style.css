@@ -96,6 +96,16 @@
   cursor: pointer;
 }
 
+.menu-icon-dev-tools {
+  width: 17px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  position: absolute;
+  top: 6px;
+  right: 35px;
+  cursor: pointer;
+}
+
 .toolbar-status {
   color: white;
   font-weight: bold;

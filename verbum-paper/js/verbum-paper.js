@@ -146,6 +146,11 @@ $(document).ready(() => {
     $('.about-modal').on('click', ()=> {
         $('.about-modal').css('display', 'none')
     })
+
+    // DevTools.
+    $('.btn-dev-tools').on('click', ()=> {
+        window.api.toggleDevTools()
+    })
     
 })
 

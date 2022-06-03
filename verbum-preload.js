@@ -6,6 +6,11 @@ var fs = require('fs');
 contextBridge.exposeInMainWorld(
     "api", {
       
+      // Dev Tools.
+      toggleDevTools: () => {
+        ipcRenderer.send('toggle-dev-tools', 'Jesus <3')
+      },
+
       // Copy image to clipboard.
       process_canvas: (canvas) => {
         console.log("Jesus <3 started")
