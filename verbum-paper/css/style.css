@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
   width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,20 +38,20 @@
 
 .separator-area {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 40%;
   width: 5px;
-  height: calc( 100% - 30px);
+  height: calc( 100% - 35px);
   cursor: col-resize;
   background-color: #007acc;
 }
 
 .draw-area {
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 0;
   width: calc( 60% - 5px);
-  height: calc( 100% - 30px);
+  height: calc( 100% - 35px);
   overflow: hidden;
   background-color: white;
 }
@@ -68,5 +69,13 @@
   left: 0;
   resize: vertical;
   overflow: auto;
+}
+
+.view-content {
+  width: 100%;
+}
+
+.view-content-inner {
+  padding: 33px;
 }
 /*# sourceMappingURL=style.css.map */
