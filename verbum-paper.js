@@ -25,6 +25,7 @@ app.once('ready', () => {
       enableRemoteModule: true,
       webviewTag: true,
       preload: path.join(__dirname, "verbum-preload.js"),
+      icon: path.join(__dirname, "/verbum-paper/img/icon.ico")
     }
   })
   
