@@ -1,6 +1,7 @@
 
 const { contextBridge } = require("electron");
 const { ipcRenderer } = require('electron')
+var fs = require('fs');
 
 contextBridge.exposeInMainWorld(
     "api", {
@@ -13,7 +14,7 @@ contextBridge.exposeInMainWorld(
         ipcRenderer.send('internal-print', 'Jesus <3')
       },
 
-      // Copia imagem para o clipboard.
+      // Copy image to clipboard.
       process_canvas: (canvas) => {
         console.log("Jesus <3 started")
         
@@ -21,6 +22,54 @@ contextBridge.exposeInMainWorld(
           const item = new ClipboardItem({ "image/png": blob });
           navigator.clipboard.write([item]); 
         });
+      },
+
+      // Load TMP file content.
+      loadTmpFile: (callback) => {
+          fs.readFile('./verbum-paper/verbum-tmp.html', 'utf-8', (err, data) => {
+              if (err) {
+                  alert("An error ocurred reading the file :" + err.message)
+                  return;
+              }
+              
+              callback(data)
+          })
+      },
+
+      // Load template viewer.
+      loadTemplateViewer: (callback) => {
+          fs.readFile('./verbum-paper/verbum-viewer-template.html', 'utf-8', (err, data) => {
+              if (err) {
+                  alert("An error ocurred reading the file :" + err.message)
+                  return;
+              }
+              
+              callback(data)
+          })
+      },
+
+      // Save template viewer.
+      saveTemplateViewer: (code, callback) => {
+          fs.writeFile('./verbum-paper/verbum-viewer.html', code, (err) => {
+              if (err) {
+                  alert("An error ocurred updating the file" + err.message)
+                  return;
+              }
+          
+              callback()
+          })
+      },
+
+      // Save TMP code.
+      saveCodeTmp: (code, callback) => {
+        fs.writeFile('./verbum-paper/verbum-tmp.html', code, (err) => {
+            if (err) {
+                alert("An error ocurred updating the file" + err.message)
+                return;
+            }
+        
+            callback()
+        })
       }
         
     }
