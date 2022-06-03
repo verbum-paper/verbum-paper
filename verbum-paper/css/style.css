@@ -71,6 +71,31 @@
   overflow: auto;
 }
 
+.menu-icon-img {
+  padding-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 15px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.menu-icon-fix1 {
+  width: 20px;
+  padding-left: 7px;
+}
+
+.menu-icon-about {
+  width: 20px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  cursor: pointer;
+}
+
 .view-content {
   width: 100%;
 }
