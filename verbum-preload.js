@@ -62,14 +62,33 @@ contextBridge.exposeInMainWorld(
 
       // Save TMP code.
       saveCodeTmp: (code, callback) => {
-        fs.writeFile('./verbum-paper/verbum-tmp.html', code, (err) => {
-            if (err) {
-                alert("An error ocurred updating the file" + err.message)
-                return;
-            }
-        
-            callback()
-        })
+          fs.writeFile('./verbum-paper/verbum-tmp.html', code, (err) => {
+              if (err) {
+                  alert("An error ocurred updating the file" + err.message)
+                  return;
+              }
+          
+              callback()
+          })
+      },
+
+      // Open HTML file.
+      openHtmlFile: (callback) => {
+          ipcRenderer.on('open-html-file-reply', (event, filePath) => {
+            
+            // Read file content.
+            fs.readFile(filePath, 'utf-8', (err, data) => {
+                if (err) {
+                    alert("An error ocurred reading the file :" + err.message)
+                    return;
+                }
+                
+                callback(data)
+            })
+            
+          })
+
+          ipcRenderer.send('open-html-file', 'Jesus <3')
       }
         
     }

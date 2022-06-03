@@ -74,4 +74,26 @@ ipcMain.on('internal-print', (event, arg) => {
   event.reply('internal-print-reply', 'Jesus <3')
 })
 
+/*
+** Open file (HTML).
+*/
+const { dialog } = require('electron')
+
+ipcMain.on('open-html-file', (event, arg) => {
+    dialog.showOpenDialog({
+        title: 'Select the HTML file',
+        buttonLabel: 'Open file',
+        filters: [{ 
+            name: 'HTML Files', 
+            extensions: ['html'] 
+        }],
+        properties: ['openFile']
+    }).then(file => {
+        if (!file.canceled) {
+            const filepath = file.filePaths[0].toString();            
+            event.reply('open-html-file-reply', filepath)
+        }
+    })
+})
+
 

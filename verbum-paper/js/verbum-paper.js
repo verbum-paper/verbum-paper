@@ -65,6 +65,18 @@ $(document).ready(() => {
 
 $(document).ready(() => {
 
+    // Open file (HTML).
+    $('.btn-open-file').on('click', ()=>{
+        window.api.openHtmlFile((data) => {
+            if (data.length > 0) {
+                currentCode = data
+                filesLoaded = true
+                codeEditor.setValue(data, -1)
+                saveAndReload()
+            }
+        })
+    })
+
     // Copy to clipboard (image).
     $('.btn-copy-clip').on('click', ()=>{
         var body = $('.draw-area-iframe').contents().find('body')[0]
@@ -130,6 +142,7 @@ function saveAndReload () {
 var reloadRunning = false
 var lastChangeDate = null
 var reloadIntervalProcess = false
+var firstLoad = true
 
 $(document).ready(() => {
     lastChangeDate = new Date()
@@ -148,8 +161,12 @@ $(document).ready(() => {
     }, 1000)
 
     codeEditor.getSession().on('change', function() {
-        lastChangeDate = new Date()
-        reloadIntervalProcess = true
+        if (firstLoad) {
+            firstLoad = false
+        } else {
+            lastChangeDate = new Date()
+            reloadIntervalProcess = true
+        }
     });
 
     setInterval(()=>{
