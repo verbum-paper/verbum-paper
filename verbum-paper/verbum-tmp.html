@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Verbum Paper</title>
+
+    <script src="./libs/polyfill-v8.2.1/polyfill.min.js" ></script>
+
+    <script src="./libs/mathjax-v3.2.1/tex-mml-chtml.js" ></script>
+
+    <script src="./libs/mathlive-v0.73.7/mathlive.min.js"></script>
+    
+    <script src="./libs/d3-v7.4.4/d3.min.js"></script>
+
+    <script src="./libs/chart.js-v3.8.0/chart.min.js" ></script>
+
+    <script src="./libs/ace-v1.5.3/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./libs/function-plot-v1.22.8/function-plot.js" ></script>
+
+    <script src="./libs/html2canvas-v1.4.1/html2canvas.min.js" ></script>
+
+    <script src="./libs/jquery-v3.6.0/jquery-3.6.0.min.js" ></script>
+
+    <link rel="stylesheet"href="./libs/highlightjs-v11.5.1/styles/base16/monokai.min.css">
+    <script src="./libs/highlightjs-v11.5.1/highlight.min.js" ></script>
+
+    <link rel="stylesheet"href="./css/normalize.css">
+    <link rel="stylesheet"href="./css/style.css">
+    
+</head>
+<body>
+    
+    <p>$$e^{i\pi}$$</p>
+
+    <p>
+    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+    </p>
+
+    <p>
+        LaTex example:<br>
+
+        \[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+        $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+    </p>
+
+
+    <math-field virtual-keyboard-mode="manual">
+        x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+    </math-field>
+
+
+    <pre><code class="language-c">// Jesus eh Top xD
+
+    int main (int argc, char *argv[])
+    {
+        int numero1 = 2;
+        int numero2 = 3;
+
+        if (numero1 == 2 || numero2 == 2)
+        {
+            printf("Expressao 2\n");
+        }
+
+        else if ( numero1 == 2 && numero2 == 3 )
+        {
+            printf("Expressao 1\n");
+        }
+
+        return 0;
+    } </code></pre>
+
+
+    <p>$$e^{i\pi}$$</p>
+
+    <p>
+    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+    </p>
+
+    <p>
+        LaTex example:<br>
+
+        \[x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\]
+        $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+    </p>
+
+
+    <math-field virtual-keyboard-mode="manual">
+        x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+    </math-field>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', 
+          () => MathLive.renderMathInDocument()
+        );
+    </script>
+  
+    <script>
+          document.addEventListener('DOMContentLoaded', (event) => {
+              document.querySelectorAll('pre code').forEach((el) => {
+                  hljs.highlightElement(el);
+              });
+          });
+    </script>
+
+</body>
+</html>
+
+

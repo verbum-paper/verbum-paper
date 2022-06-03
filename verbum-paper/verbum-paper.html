@@ -30,6 +30,12 @@
     <link rel="stylesheet"href="./css/normalize.css">
     <link rel="stylesheet"href="./css/style.css">
     
+    <style>
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -40,21 +46,14 @@
 
     <!-- Code area -->
     <div class="code-area" >
-
-        <pre id="code-editor">function foo(items) {
-    var i;
-    for (i = 0; i &lt; items.length; i++) {
-        alert("Ace Rocks " + items[i]);
-    }
-}</pre>
-
+        <pre id="code-editor"></pre>
     </div>
 
     <div class="separator-area"></div>
 
     <!-- Draw area -->
     <div class="draw-area">
-
+        <iframe src="verbum-tmp.html" frameborder="0"></iframe>
     </div>
 
     <script src="./js/verbum-paper.js" ></script>

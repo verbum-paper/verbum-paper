@@ -1,19 +1,38 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
 .toolbar-area {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 30px;
-  background-color: green;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #007acc;
+  background-color: #1e1e1e;
 }
 
 .code-area {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 0;
   width: 40%;
-  height: calc( 100% - 30px);
-  background-color: #141414;
+  height: calc( 100% - 25px);
+  background-color: #1e1e1e;
 }
 
 .separator-area {
@@ -23,7 +42,7 @@
   width: 5px;
   height: calc( 100% - 30px);
   cursor: col-resize;
-  background-color: yellow;
+  background-color: #007acc;
 }
 
 .draw-area {
@@ -32,12 +51,18 @@
   right: 0;
   width: calc( 60% - 5px);
   height: calc( 100% - 30px);
-  background-color: blue;
+  overflow: hidden;
+  background-color: white;
+}
+
+.draw-area iframe {
+  width: 100%;
+  height: 100%;
 }
 
 #code-editor {
   position: absolute;
-  top: 0;
+  top: -12px;
   right: 0;
   bottom: 0;
   left: 0;
