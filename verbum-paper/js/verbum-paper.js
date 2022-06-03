@@ -137,6 +137,15 @@ $(document).ready(() => {
         currentCode = codeEditor.getValue()
         saveAndReload()
     })
+
+    // About menu.
+    $('.btn-about').on('click', ()=> {
+        $('.about-modal').css('display', 'block')
+    })
+    
+    $('.about-modal').on('click', ()=> {
+        $('.about-modal').css('display', 'none')
+    })
     
 })
 

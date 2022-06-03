@@ -111,4 +111,61 @@
 .view-content-inner {
   padding: 33px;
 }
+
+.about-modal {
+  display: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 60%;
+  z-index: 31337;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 100px black;
+          box-shadow: 0 0 100px black;
+  background-color: white;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.modal-content-inner {
+  height: 85%;
+  width: 95%;
+  overflow: auto;
+}
+
+.modal-logo {
+  text-align: center;
+}
+
+.modal-logo img {
+  width: 100px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-subtitle {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.modal-credits {
+  text-align: center;
+}
+
+.modal-license {
+  padding: 100px;
+  text-align: justify;
+}
 /*# sourceMappingURL=style.css.map */
