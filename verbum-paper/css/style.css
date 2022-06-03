@@ -96,6 +96,14 @@
   cursor: pointer;
 }
 
+.toolbar-status {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
 .view-content {
   width: 100%;
 }

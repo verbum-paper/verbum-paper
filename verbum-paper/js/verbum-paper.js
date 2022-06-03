@@ -115,6 +115,7 @@ $(document).ready(() => {
 
     // Copy to clipboard (image).
     $('.btn-copy-clip').on('click', ()=>{
+        $('.toolbar-status').text('Status: Copying image...')
         var body = $('.draw-area-iframe').contents().find('body')[0]
 
         html2canvas(body, {
@@ -123,6 +124,11 @@ $(document).ready(() => {
             }
         }).then(canvas => {
             window.api.process_canvas(canvas)
+            $('.toolbar-status').text('Status: Image copied successfully!')
+            
+            setTimeout(()=> {
+                $('.toolbar-status').text('')
+            }, 2000)
         });
     })
 
