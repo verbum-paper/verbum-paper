@@ -89,6 +89,34 @@ contextBridge.exposeInMainWorld(
           })
 
           ipcRenderer.send('open-html-file', 'Jesus <3')
+      },
+
+      // Save HTML.
+      saveHtmlFile: (callback) => {
+          ipcRenderer.on('save-html-file-reply', (event, filePath) => {
+              
+              // Prepare ext.
+              var finalPath = filePath
+              if (filePath.substring(filePath.length - 5, filePath.length) != '.html') {
+                  finalPath = filePath + '.html'
+              }
+              
+              callback(finalPath)
+          })
+
+          ipcRenderer.send('save-html-file', 'Jesus <3')
+      },
+
+      // Save spec file.
+      writeFileSpec: (code, path, callback) => {
+          fs.writeFile(path, code, (err) => {
+            if (err) {
+                alert("An error ocurred write file" + err.message)
+                return;
+            }
+        
+            callback('File writed.')
+        })
       }
         
     }

@@ -77,6 +77,15 @@ $(document).ready(() => {
         })
     })
 
+    // Export HTML.
+    $('.btn-export-html').on('click', ()=>{
+        window.api.saveHtmlFile((data1)=>{
+            window.api.writeFileSpec(codeEditor.getValue(), data1, (data2)=>{
+                console.log(data2)
+            })
+        })
+    })
+
     // Copy to clipboard (image).
     $('.btn-copy-clip').on('click', ()=>{
         var body = $('.draw-area-iframe').contents().find('body')[0]

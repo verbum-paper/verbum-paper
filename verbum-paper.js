@@ -96,4 +96,30 @@ ipcMain.on('open-html-file', (event, arg) => {
     })
 })
 
+/*
+** Save HTML.
+*/
+
+ipcMain.on('save-html-file', (event, arg) => {
+    dialog.showSaveDialog(null, {
+        title: "Export/save HTML file",
+        buttonLabel : "Save file",
+        filters :[
+            {name: 'HTML File', extensions: ['html']},
+            {name: 'All Files', extensions: ['*']}
+        ]
+    }).then(result => {
+        filename = result.filePath;
+      
+        if (filename === undefined) {
+            alert('The user clicked the btn but didn\'t created a file');
+            return;
+        }
+        
+        event.reply('save-html-file-reply', filename)
+    }).catch(err => {
+        alert(err)
+    })
+})
+
 
