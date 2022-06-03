@@ -127,17 +127,53 @@ function saveAndReload () {
     }
 }
 
+var reloadRunning = false
+var lastChangeDate = null
+var reloadIntervalProcess = false
+
 $(document).ready(() => {
+    lastChangeDate = new Date()
 
     setInterval(()=>{
         if (filesLoaded) {
-            var code = codeEditor.getValue()
-            window.api.saveCodeTmp(code, ()=>{
-
-            })
+            if (!reloadRunning) {
+                reloadRunning = true
+            
+                var code = codeEditor.getValue()
+                window.api.saveCodeTmp(code, ()=>{
+                    reloadRunning = false
+                })
+            }
         }
     }, 1000)
 
+    codeEditor.getSession().on('change', function() {
+        lastChangeDate = new Date()
+        reloadIntervalProcess = true
+    });
+
+    setInterval(()=>{
+        if (reloadIntervalProcess) {
+            var currentDate = new Date().getTime()
+            var lastDate = lastChangeDate.getTime()
+            var milisecDiff = 0;
+
+            if (lastDate < currentDate) {
+                milisecDiff = currentDate - lastDate
+            } else {
+                milisecDiff = lastDate - currentDate
+            }
+
+            var dateDiff = new Date(milisecDiff)
+            var secDiff = dateDiff.getSeconds()
+
+            if (secDiff >= 3) {
+                reloadIntervalProcess = false
+                currentCode = codeEditor.getValue()
+                saveAndReload()
+            }
+        }
+    }, 1000)
 })
 
 
