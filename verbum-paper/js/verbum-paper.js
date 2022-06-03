@@ -107,6 +107,12 @@ $(document).ready(() => {
         });
     })
 
+    // Export PDF.
+    $('.btn-export-pdf').on('click', ()=>{
+        window.frames["draw-area-iframe-nm"].focus()
+        window.frames["draw-area-iframe-nm"].print()
+    })
+
     // Copy to clipboard (image).
     $('.btn-copy-clip').on('click', ()=>{
         var body = $('.draw-area-iframe').contents().find('body')[0]

@@ -5,16 +5,7 @@ var fs = require('fs');
 
 contextBridge.exposeInMainWorld(
     "api", {
-        
-      // Printer.
-      internal_print: () => {
-        console.log("Jesus <3 started")
-        ipcRenderer.on('internal-print-reply', (event, arg) => {
-          console.log(arg)
-        })
-        ipcRenderer.send('internal-print', 'Jesus <3')
-      },
-
+      
       // Copy image to clipboard.
       process_canvas: (canvas) => {
         console.log("Jesus <3 started")
@@ -139,13 +130,13 @@ contextBridge.exposeInMainWorld(
       // Save spec file (PNG).
       writeFileSpecPng: (canvas, path, callback) => {
           saveCallbackPng(canvas, path, callback)
-      },
+      }
 
-        
     }
 );
 
 // Export PNG.
+// https://stackoverflow.com/questions/52692258/how-to-save-an-image-drawn-on-the-canvas-in-electron-js
 async function saveCallbackPng (canvas, path, callback) {
   const blob = await new Promise(
      (resolve) => canvas.toBlob(blob => resolve(blob), "image/png", 0.8)

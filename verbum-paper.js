@@ -48,9 +48,9 @@ app.once('ready', () => {
 })
 
 /*
-** Printer.
+** Printer / Export PDF.
 */
-ipcMain.on('internal-print', (event, arg) => {
+ipcMain.on('save-pdf-file', (event, arg) => {
   console.log("Jesus <3")
 
   var options = {
@@ -73,7 +73,7 @@ ipcMain.on('internal-print', (event, arg) => {
     console.log('Print Initiated');
   });
 
-  event.reply('internal-print-reply', 'Jesus <3')
+  event.reply('save-pdf-file-reply', 'Jesus <3')
 })
 
 /*
