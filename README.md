@@ -12,12 +12,12 @@ You can also copy your math expressions to Clipboard. This way you can easily sh
 :bookmark_tabs: Table of Contents
 -----
 * [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
-* [Arquivo de exemplo]()
-* [Código LaTex]()
-* [Gráfico de funções]()
-* [Gráficos em geral]()
-* [Copiando para o Clipboard]()
-* [Exportando arquivo (HTML, PDF, PNG)]()
+* [Exemple file]()
+* [LaTex code]()
+* [Mathematical function graphs]()
+* [General graphics]()
+* [Copying to Clipboard]()
+* [Exporting file (HTML, PDF, PNG)]()
 -----
 
 
