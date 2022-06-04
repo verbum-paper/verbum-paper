@@ -317,3 +317,10 @@ Simple yet flexible JavaScript charting for designers & developers.
 Link: https://www.chartjs.org/docs/latest/samples/information.html
 
 
+### Highlight.js
+
+Syntax highlighting librarie.
+
+Link: https://highlightjs.org/usage/
+
+
