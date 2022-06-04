@@ -16,7 +16,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 :bookmark_tabs: Table of Contents
 -----
 * [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
-* [Exemple file]()
+* [Exemple]()
 * [LaTex code]()
 * [Mathematical function graphs]()
 * [General graphics]()
