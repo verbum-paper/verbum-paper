@@ -124,6 +124,10 @@ Example to include an equation:
 \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 ```
 
+This code produces this view:
+
+<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/3.png" ></div>
+
 
 :link: Reference
 ---
