@@ -9,16 +9,18 @@
 :hammer_and_wrench: Installation
 ---
 
-Entre no diretório onde você deseja instalar o Verbum Paper, por exemplo:
+Enter the directory where you want to install Verbum Paper, for example:
 
+```bash
 mkdir ~/verbum-paper
 cd ~/verbum-paper
+```
 
-Execute o script de instalação:
-
+Run the install script:
+```bash
 wget -c https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/verbum-install/verbum-install.sh
 chmod +x verbum-install.sh
 ./verbum-install.sh
-
+```
 
 
