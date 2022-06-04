@@ -23,7 +23,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [Copying to Clipboard]()
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries]()
-* [Reference]()
+* [Reference](https://github.com/verbum-paper/verbum-paper#link-reference)
 -----
 
 
