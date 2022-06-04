@@ -50,16 +50,59 @@ chmod +x verbum-install.sh
 ./verbum-install.sh
 ```
 
-Creating shortcut in the operating system:
+Creating shortcut in the operating system, example:
 ```bash
+sudo ln -s "$HOME/verbum-paper/verbum-paper/verbum-paper.sh" /usr/bin/verbum-paper
+```
 
+To open Verbum Paper, enter the command:
+```bash
+verbum-paper
 ```
 
 
 :page_facing_up: Example
 ---
 
+```html
+<div class="title" >
+    Quadratic function
+</div>
 
+<div class="text" >
+    Defination: quadratic function is a function 
+    <b>f: ℝ → ℝ, x ∈ ℝ</b>,
+    that can be described by an equation of the form 
+    <b>f(x) = ax² + bx + c</b>, where <b>a ≠ 0</b>.
+</div>
+
+<center>
+    <div class="text text-center" >
+        Graph of a quadratic function
+    </div>
+
+    <div id="function"></div>
+
+    <script>
+        functionPlot({
+            target: "#function",
+            width: 400,
+            height: 200,
+            yAxis: { domain: [-1, 9] },
+            grid: true,
+            data: [ {
+                fn: "x^2"
+            }]
+        });
+    </script>
+</center>
+
+<p class="text text-center">
+    Root of the quadratic function:
+    
+    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+</p>
+```
 
 
 :link: Reference
