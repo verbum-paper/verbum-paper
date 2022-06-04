@@ -131,13 +131,34 @@ This code produces this view:
 :heavy_plus_sign: Mathematical function graphs
 ---
 
+To create graphs of quadratic functions, the Function Plot library is used.
+Exemple:
+
+```html
+<div id="function"></div>
+```
+
+```javascript
+functionPlot({
+    target: "#function",
+    width: 400,
+    height: 200,
+    yAxis: { domain: [-1, 9] },
+    grid: true,
+    data: [ {
+        fn: "x^2"
+    }]
+});
+```
+
+The code above will produce this view:
+<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
 
 
-
-:link: References
+:link: Standard libraries and References
 ---
 
-# LaTex
+# Math Live - LaTex
 
 For use of LaTex commands, styling, and related details, go to the MathLive reference.
 
