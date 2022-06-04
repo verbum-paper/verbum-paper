@@ -138,15 +138,21 @@ This code produces this view:
 :link: References
 ---
 
-# LaTex Reference
+# LaTex
 
 For use of LaTex commands, styling, and related details, go to the MathLive reference.
 
-Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
+Support: Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
 
 Link: https://cortexjs.io/mathlive/reference/commands/
 
 
-# Function Plot Reference
+# Function Plot
+
+To visualize quadratic functions you can use the Function Plot library.
+
+Support: Plotting a curve, Additional options, Grid, Domain, Number of samples, Annotations, Range and closed path, Logarithmic scales, Multiple graphs, Graph types, Tip, nth-root, Secants, Derivative, Linked graphs, Update, Function continuity, Circle, Parametric equations, Polar equations, Implicit functions, Points and polylines, Vectors, Advanced, Recipes.
+
+Link: https://mauriciopoppe.github.io/function-plot/
 
 
