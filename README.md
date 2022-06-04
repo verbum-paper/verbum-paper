@@ -32,7 +32,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 
 Note: This installation process is for <b>Linux</b> environment. 
 
-Requirements:
+<b>Requirements:</b>
 - git
 - unzip
 - wget
