@@ -156,7 +156,7 @@ functionPlot({
 The code above will produce this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
 
-# D3 - Data-Driven Documents
+### D3 - Data-Driven Documents
 
 To produce graphics for different applications, it is recommended to use the D3 library.
 Below is an example using the D3 library:
@@ -222,7 +222,7 @@ svg.append("path")
 :link: Standard libraries and References
 ---
 
-# Math Live - LaTex
+### Math Live - LaTex
 
 For use of LaTex commands, styling, and related details, go to the MathLive reference.
 
