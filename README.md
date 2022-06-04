@@ -6,6 +6,8 @@ Through it you can write your file using CSS, HTML and Javascript code. You can 
 
 Via Verbum Paper you can insert graphics for functions (eg 2nd degree functions). You can also insert LaTex code mixed in with your HTML code.
 
+You can also copy your math expressions to Clipboard. This way you can easily share your math equations with your friends :smiley:
+
 
 :bookmark_tabs: Table of Contents
 -----
