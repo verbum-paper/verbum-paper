@@ -19,7 +19,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
 * [LaTex code](https://github.com/verbum-paper/verbum-paper#white_square_button-latex-code)
 * [Mathematical function graphs](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-function-graphs)
-* [General graphics]()
+* [General graphics](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-general-graphics)
 * [Copying to Clipboard]()
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries and References](https://github.com/verbum-paper/verbum-paper#link-standard-libraries-and-references)
@@ -155,6 +155,9 @@ functionPlot({
 
 The code above will produce this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
+
+:bar_chart: General Graphics
+---
 
 ### D3 - Data-Driven Documents
 
