@@ -131,7 +131,7 @@ This code produces this view:
 :heavy_plus_sign: Mathematical function graphs
 ---
 
-# Function Plot - A 2d function plotter powered by D3
+### Function Plot - A 2d function plotter powered by D3
 
 To create graphs of quadratic functions, the Function Plot library is used.
 Exemple:
@@ -231,7 +231,7 @@ Support: Math and Text mode, Fractions and Binomials, Binary Operators, Function
 Link: https://cortexjs.io/mathlive/reference/commands/
 
 
-# Function Plot
+### Function Plot
 
 To visualize quadratic functions you can use the Function Plot library.
 
@@ -240,7 +240,7 @@ Support: Plotting a curve, Additional options, Grid, Domain, Number of samples, 
 Link: https://mauriciopoppe.github.io/function-plot/
 
 
-# D3
+### D3
 
 D3.js is a JavaScript library for manipulating documents based on data.
 
