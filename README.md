@@ -18,12 +18,12 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [Installation (Linux)](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
 * [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
 * [LaTex code](https://github.com/verbum-paper/verbum-paper#white_square_button-latex-code)
-* [Mathematical function graphs]()
+* [Mathematical function graphs](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-function-graphs)
 * [General graphics]()
 * [Copying to Clipboard]()
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries]()
-* [Reference](https://github.com/verbum-paper/verbum-paper#link-reference)
+* [References](https://github.com/verbum-paper/verbum-paper#link-references)
 -----
 
 
@@ -129,7 +129,13 @@ This code produces this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/3.png" ></div>
 
 
-:link: Reference
+:heavy_plus_sign: Mathematical function graphs
+---
+
+
+
+
+:link: References
 ---
 
 # LaTex Reference
@@ -139,5 +145,8 @@ For use of LaTex commands, styling, and related details, go to the MathLive refe
 Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
 
 Link: https://cortexjs.io/mathlive/reference/commands/
+
+
+# Function Plot Reference
 
 
