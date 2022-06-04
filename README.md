@@ -16,7 +16,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 :bookmark_tabs: Table of Contents
 -----
 * [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
-* [Exemple]()
+* [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
 * [LaTex code]()
 * [Mathematical function graphs]()
 * [General graphics]()
@@ -29,6 +29,12 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 
 :hammer_and_wrench: Installation
 ---
+
+Prerequisites:
+- git
+- unzip
+- wget
+
 
 Enter the directory where you want to install Verbum Paper, for example:
 
@@ -50,6 +56,12 @@ Creating shortcut in the operating system:
 ```
 
 
+:page_facing_up: Example
+---
+
+
+
+
 :link: Reference
 ---
 
@@ -59,6 +71,6 @@ For use of LaTex commands, styling, and related details, go to the MathLive refe
 
 Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
 
-Links: https://cortexjs.io/mathlive/reference/commands/
+Link: https://cortexjs.io/mathlive/reference/commands/
 
 
