@@ -219,6 +219,10 @@ svg.append("path")
     )
 ```
 
+The code above will produce this view:
+<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/5.png" ></div>
+
+
 :link: Standard libraries and References
 ---
 
