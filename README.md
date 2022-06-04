@@ -16,12 +16,12 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 :bookmark_tabs: Table of Contents
 -----
 * [Installation (Linux)](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
+* [Copying to Clipboard](https://github.com/verbum-paper/verbum-paper#clipboard-copying-to-clipboard)
 * [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
 * [LaTex code](https://github.com/verbum-paper/verbum-paper#white_square_button-latex-code)
 * [Mathematical function graphs](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-function-graphs)
 * [General graphics](https://github.com/verbum-paper/verbum-paper#bar_chart-general-graphics)
 * [Highlight code](https://github.com/verbum-paper/verbum-paper#computer-highlight-code)
-* [Copying to Clipboard](https://github.com/verbum-paper/verbum-paper#clipboard-copying-to-clipboard)
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries and References](https://github.com/verbum-paper/verbum-paper#link-standard-libraries-and-references)
 -----
@@ -61,6 +61,14 @@ To open Verbum Paper, enter the command:
 ```bash
 verbum-paper
 ```
+
+
+:clipboard: Copying to Clipboard
+---
+
+To copy your document, in image form, to the Clipboard, click on the icon:
+
+<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/7.png" ></div>
 
 
 :page_facing_up: Example
@@ -280,13 +288,6 @@ To highlight code, it is recommended to use the Highlight.js library.
     }]
 });</code></pre>
 ```
-
-:clipboard: Copying to Clipboard
----
-
-To copy your document, in image form, to the Clipboard, click on the icon:
-
-<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/7.png" ></div>
 
 
 :link: Standard libraries and References
