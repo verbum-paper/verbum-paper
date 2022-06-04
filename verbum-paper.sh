@@ -1,1 +1,5 @@
-./electron-v18.3.0/electron ./
+# ./electron-v18.3.0/electron ./
+
+cd "\"$(pwd)/verbum-paper\""
+
+
