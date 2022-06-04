@@ -1,7 +1,7 @@
 
 <h2 align=center><b>Verbum Paper - Share the math!</b></h2>
 
-# <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/2.png" width="100%"></div>
+# <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/1.png" width="100%"></div>
 
 Verbum Paper is a software that is intended to be used to facilitate the sharing of formulas, equations, and things involving mathematics.
 
@@ -66,6 +66,8 @@ verbum-paper
 :page_facing_up: Example
 ---
 
+Below is a simple example, where we create a graph of a function, using the FunctionPlot library. And we make use of LaTex commands to display an equation.
+
 ```html
 <div class="title" >
     Quadratic function
@@ -106,6 +108,9 @@ verbum-paper
 </p>
 ```
 
+The view will look like this:
+
+<div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/2.png" width="50%"></div>
 
 :link: Reference
 ---
