@@ -23,6 +23,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [Copying to Clipboard]()
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries]()
+* [Reference]()
 -----
 
 
@@ -47,4 +48,15 @@ Creating shortcut in the operating system:
 ```bash
 
 ```
+
+
+:link: Reference
+---
+
+# LaTex Reference
+
+Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
+
+Links: https://cortexjs.io/mathlive/reference/commands/
+
 
