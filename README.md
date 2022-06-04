@@ -131,6 +131,8 @@ This code produces this view:
 :heavy_plus_sign: Mathematical function graphs
 ---
 
+# Function Plot - A 2d function plotter powered by D3
+
 To create graphs of quadratic functions, the Function Plot library is used.
 Exemple:
 
@@ -153,6 +155,8 @@ functionPlot({
 
 The code above will produce this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
+
+# D3 - Data-Driven Documents
 
 To produce graphics for different applications, it is recommended to use the D3 library.
 Below is an example using the D3 library:
