@@ -17,7 +17,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 -----
 * [Installation (Linux)](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
 * [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
-* [LaTex code]()
+* [LaTex code](https://github.com/verbum-paper/verbum-paper#white_square_button-latex-code)
 * [Mathematical function graphs]()
 * [General graphics]()
 * [Copying to Clipboard]()
@@ -111,6 +111,18 @@ Below is a simple example, where we create a graph of a function, using the Func
 The view will look like this:
 
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/2.png" width="50%"></div>
+
+
+:white_square_button: LaTex code
+
+To insert LaTex code, you must follow the MathLive specification: https://cortexjs.io/mathlive/reference/commands/
+
+Example to include an equation:
+
+```latex
+\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+```
+
 
 :link: Reference
 ---
