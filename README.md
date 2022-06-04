@@ -114,6 +114,7 @@ The view will look like this:
 
 
 :white_square_button: LaTex code
+---
 
 To insert LaTex code, you must follow the MathLive specification: https://cortexjs.io/mathlive/reference/commands/
 
