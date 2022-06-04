@@ -30,9 +30,9 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 :hammer_and_wrench: Installation
 ---
 
-Note: This installation process is for Linux environment. 
+Note: This installation process is for <b>Linux</b> environment. 
 
-Prerequisites:
+Requirements:
 - git
 - unzip
 - wget
