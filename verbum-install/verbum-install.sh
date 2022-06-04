@@ -37,7 +37,6 @@ cd ..
 echo "cd \"$(pwd)/verbum-paper\"; ./verbum-paper.sh" >> shortcut.sh
 chmod +x shortcut.sh
 
-
 echo "Finished <3"
 
 
