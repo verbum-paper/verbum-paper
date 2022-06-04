@@ -33,6 +33,7 @@ rm -rf "electron-v18.3.0-linux-x64.zip"
 cd ..
 
 # Configure verbum-paper.sh
+cd ..
 echo "cd \"$(pwd)/verbum-paper\"; ./verbum-paper.sh" >> shortcut.sh
 chmod +x shortcut.sh
 
