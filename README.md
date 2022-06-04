@@ -22,7 +22,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [Mathematical function graphs](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-function-graphs)
 * [General graphics](https://github.com/verbum-paper/verbum-paper#bar_chart-general-graphics)
 * [Highlight code](https://github.com/verbum-paper/verbum-paper#computer-highlight-code)
-* [Exporting file (HTML, PDF, PNG)]()
+* [Exporting file (HTML, PDF, PNG)](https://github.com/verbum-paper/verbum-paper#page_with_curl-exporting-file-(HTML,-PDF,-PNG))
 * [Standard libraries and References](https://github.com/verbum-paper/verbum-paper#link-standard-libraries-and-references)
 -----
 
@@ -288,6 +288,14 @@ To highlight code, it is recommended to use the Highlight.js library.
     }]
 });</code></pre>
 ```
+
+
+:page_with_curl: Exporting file (HTML, PDF, PNG)
+---
+
+To export your file to the formats: HTML, PNG and PDF; click on their respective icons.
+
+<img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/8.png" >
 
 
 :link: Standard libraries and References
