@@ -56,7 +56,7 @@ chmod +x verbum-install.sh
 
 Creating shortcut in the operating system (Linux), example:
 ```bash
-sudo ln -s "$HOME/verbum-paper/verbum-paper/verbum-paper.sh" /usr/bin/verbum-paper
+sudo ln -s "$HOME/verbum-paper/shortcut.sh" /usr/bin/verbum-paper
 ```
 
 To open Verbum Paper, enter the command:
