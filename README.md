@@ -55,6 +55,8 @@ Creating shortcut in the operating system:
 
 # LaTex Reference
 
+For use of LaTex commands, styling, and related details, go to the MathLive reference.
+
 Math and Text mode, Fractions and Binomials, Binary Operators, Functions, Bounds, Projections, Modulo, Unicode, Large Operators, Logic, Arrows, Accents, Relational Operators, Negated Relational Operators, Sets, Relational Set Operators, Greek, Hebrew, Letterlike Symbols, Delimiters, Punctuation, Spacing, Decorations, Notations, Colors, Font Styling, MathJax HTML Extension, Sizing, Various, MediaWiki, Physics, Chemistry, Macros, Environments / Matrixes, TeX Registers, TeX Primitives.
 
 Links: https://cortexjs.io/mathlive/reference/commands/
