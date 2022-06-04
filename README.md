@@ -1,4 +1,7 @@
-# Verbum Paper
+
+<h2 align=center><b>Verbum Paper - Share the math!</b></h2>
+
+# <div align=center><img src="" height=100px></div>
 
 Verbum Paper is a software that is intended to be used to facilitate the sharing of formulas, equations, and things involving mathematics.
 

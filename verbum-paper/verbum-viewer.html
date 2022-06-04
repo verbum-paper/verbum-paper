@@ -39,16 +39,19 @@
         
             
 <div class="title" >
-    Função polinomial do 2° grau
+    Quadratic function
 </div>
 
 <div class="text" >
-    Definição: uma função <b>f: ℝ → ℝ</b> chama-se <i>quadrática</i> quando existem números reais <b>a</b>, <b>b</b>, <b>c</b>, com <b>a</b> ≠ 0, tal que <b>f(x) = ax² + bx + c</b> para todo <b>x</b> ∈ ℝ.
+    Defination: quadratic function is a function 
+    <b>f: ℝ → ℝ, x ∈ ℝ</b>,
+    that can be described by an equation of the form 
+    <b>f(x) = ax² + bx + c</b>, where <b>a ≠ 0</b>.
 </div>
 
 <center>
     <div class="text text-center" >
-        Gráfico de uma função quadrática
+        Graph of a quadratic function
     </div>
 
     <div id="function"></div>
@@ -67,28 +70,11 @@
     </script>
 </center>
 
-<div class="text" >
-    Chama-se <i>zero ou raiz da função</i> do 2° grau <i>f(x) = ax² + bx + c</i> o número real <i>x</i> tal que <i>f(x) = 0</i>. Os zeros da função quadrática são dados pela chamada <b>fórmula de Bhaskara</b>:
-</div>
-
-<p>
+<p class="text text-center">
+    Root of the quadratic function:
+    
     \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 </p>
-
-<div class="text" >
-    O gráfico da função acima pode ser desenhado utilizando o código abaixo.
-</div>
-
-<pre><code class="language-javascript">functionPlot({
-    target: "#function",
-    width: 400,
-    height: 200,
-    yAxis: { domain: [-1, 9] },
-    grid: true,
-    data: [ {
-        fn: "x^2"
-    }]
-});</code></pre>
 
 
 
