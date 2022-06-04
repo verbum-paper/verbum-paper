@@ -2,11 +2,11 @@
 
 :triangular_flag_on_post: Table of Contents
 -----
-* [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
+* [Installation](https://github.com/verbum-paper/verbum-paper#bookmark_tabs-installation)
 -----
 
 
-:hammer_and_wrench: Installation
+:bookmark_tabs: Installation
 ---
 
 Enter the directory where you want to install Verbum Paper, for example:
