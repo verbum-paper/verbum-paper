@@ -1,8 +1,21 @@
 # Verbum Paper
 
+Verbum Paper is a software that is intended to be used to facilitate the sharing of formulas, equations, and things involving mathematics.
+
+Through it you can write your file using CSS, HTML and Javascript code. You can import external libraries written in javascript, such as for building graphics, or for something in particular.
+
+Via Verbum Paper you can insert graphics for functions (eg 2nd degree functions). You can also insert LaTex code mixed in with your HTML code.
+
+
 :bookmark_tabs: Table of Contents
 -----
 * [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
+* [Arquivo de exemplo]()
+* [Código LaTex]()
+* [Gráfico de funções]()
+* [Gráficos em geral]()
+* [Copiando para o Clipboard]()
+* [Exportando arquivo (HTML, PDF, PNG)]()
 -----
 
 
