@@ -154,6 +154,12 @@ functionPlot({
 The code above will produce this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
 
+To produce graphics for different applications, it is recommended to use the D3 library.
+Below is an example using the D3 library:
+
+```html
+
+```
 
 :link: Standard libraries and References
 ---
@@ -174,5 +180,12 @@ To visualize quadratic functions you can use the Function Plot library.
 Support: Plotting a curve, Additional options, Grid, Domain, Number of samples, Annotations, Range and closed path, Logarithmic scales, Multiple graphs, Graph types, Tip, nth-root, Secants, Derivative, Linked graphs, Update, Function continuity, Circle, Parametric equations, Polar equations, Implicit functions, Points and polylines, Vectors, Advanced, Recipes.
 
 Link: https://mauriciopoppe.github.io/function-plot/
+
+
+# D3
+
+D3.js is a JavaScript library for manipulating documents based on data.
+
+Link: https://observablehq.com/@d3/gallery
 
 
