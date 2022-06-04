@@ -15,7 +15,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 
 :bookmark_tabs: Table of Contents
 -----
-* [Installation](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
+* [Installation (Linux)](https://github.com/verbum-paper/verbum-paper#hammer_and_wrench-installation)
 * [Exemple](https://github.com/verbum-paper/verbum-paper#page_facing_up-example)
 * [LaTex code]()
 * [Mathematical function graphs]()
@@ -50,7 +50,7 @@ chmod +x verbum-install.sh
 ./verbum-install.sh
 ```
 
-Creating shortcut in the operating system, example:
+Creating shortcut in the operating system (Linux), example:
 ```bash
 sudo ln -s "$HOME/verbum-paper/verbum-paper/verbum-paper.sh" /usr/bin/verbum-paper
 ```
