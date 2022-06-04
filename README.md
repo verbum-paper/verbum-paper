@@ -20,6 +20,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [LaTex code](https://github.com/verbum-paper/verbum-paper#white_square_button-latex-code)
 * [Mathematical function graphs](https://github.com/verbum-paper/verbum-paper#heavy_plus_sign-mathematical-function-graphs)
 * [General graphics](https://github.com/verbum-paper/verbum-paper#bar_chart-general-graphics)
+* [Highlight code](https://github.com/verbum-paper/verbum-paper#computer-highlight-code)
 * [Copying to Clipboard]()
 * [Exporting file (HTML, PDF, PNG)]()
 * [Standard libraries and References](https://github.com/verbum-paper/verbum-paper#link-standard-libraries-and-references)
@@ -260,6 +261,25 @@ new Chart("chart-example", {
 ```
 Graph view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/6.png" ></div>
+
+
+:computer: Highlight code
+---
+
+To highlight code, it is recommended to use the Highlight.js library.
+
+```html
+<pre><code class="language-javascript">functionPlot({
+    target: "#function",
+    width: 400,
+    height: 200,
+    yAxis: { domain: [-1, 9] },
+    grid: true,
+    data: [ {
+        fn: "x^2"
+    }]
+});</code></pre>
+```
 
 
 :link: Standard libraries and References
