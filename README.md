@@ -28,6 +28,7 @@ You can also copy your math expressions to <b>Clipboard</b>. This way you can ea
 * [License](https://github.com/verbum-paper/verbum-paper#scroll-license)
 -----
 
+<br>
 
 :hammer_and_wrench: Installation
 ---
@@ -64,6 +65,7 @@ To open Verbum Paper, enter the command:
 verbum-paper
 ```
 
+<br>
 
 :clipboard: Copying to Clipboard
 ---
@@ -72,6 +74,7 @@ To copy your document, in image form, to the Clipboard, click on the icon:
 
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/7.png" ></div>
 
+<br>
 
 :page_facing_up: Example
 ---
@@ -122,6 +125,7 @@ The view will look like this:
 
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/2.png" width="50%"></div>
 
+<br>
 
 :white_square_button: LaTex code
 ---
@@ -138,6 +142,7 @@ This code produces this view:
 
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/3.png" ></div>
 
+<br>
 
 :heavy_plus_sign: Mathematical function graphs
 ---
@@ -166,6 +171,8 @@ functionPlot({
 
 The code above will produce this view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/4.png" ></div>
+
+<br>
 
 :bar_chart: General Graphics
 ---
@@ -272,6 +279,7 @@ new Chart("chart-example", {
 Graph view:
 <div align=center><img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/6.png" ></div>
 
+<br>
 
 :computer: Highlight code
 ---
@@ -291,6 +299,7 @@ To highlight code, it is recommended to use the Highlight.js library.
 });</code></pre>
 ```
 
+<br>
 
 :page_with_curl: Exporting files
 ---
@@ -299,6 +308,7 @@ To export your file to the formats: HTML, PNG and PDF; click on their respective
 
 <img src="https://raw.githubusercontent.com/verbum-paper/verbum-paper/main/media/images/8.png" >
 
+<br>
 
 :link: Standard libraries and References
 ---
@@ -341,6 +351,7 @@ Syntax highlighting librarie.
 
 Link: https://highlightjs.org/usage/
 
+<br>
 
 :smiley: Author
 ---
@@ -350,6 +361,7 @@ Blog: [melchisedech333.github.io](https://melchisedech333.github.io/)
 
 <img src="https://github.com/melchisedech333.png?size=200" height="100" />
 
+<br>
 
 :scroll: License
 ---
