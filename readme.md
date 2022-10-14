@@ -22,6 +22,8 @@ Via Verbum Paper you can insert graphics for functions (eg 2nd degree functions)
 
 You can also copy your math expressions to <b>Clipboard</b>. This way you can easily share your math equations with your friends :smiley:
 
+**If you liked this project, or if it was useful to you, please [consider becoming a sponsor](https://github.com/sponsors/verbum-paper) :blue_heart:**
+
 <br>
 
 :bookmark_tabs: Table of Contents
